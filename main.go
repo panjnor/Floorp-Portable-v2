@@ -243,7 +243,7 @@ func checkForUpdates() (bool, string, string, string) {
 	log.Info().Msgf("Latest version from GitHub: %s", latestVersion)
 
 	// Construct download URL
-	downloadURL := strings.Replace(releaseURL, "tag", "download", 1) + "/floorp-win64.installer.exe"
+	downloadURL := strings.Replace(releaseURL, "tag", "download", 1) + "/floorp-windows-x86_64.installer.exe"
 	log.Info().Msgf("Download URL: %s", downloadURL)
 
 	// Compare versions

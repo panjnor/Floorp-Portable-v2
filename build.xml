@@ -19,7 +19,7 @@
   <!-- Override the packaging target to skip installer creation -->
   <target name="packaging">
     <echo message="Packaging release..."/>
-    <property name="release.7z.filename" value="floorp-win64.portable.7z"/>
+    <property name="release.7z.filename" value="floorp-windows-x86_64.portable.7z"/>
     <!-- .7z release -->
     <echo message="Building 7z archive only (skipping installer creation)..."/>
     <sevenzip src="${build.path}/*" dest="${release.path}\${release.7z.filename}" format="7z"/>
