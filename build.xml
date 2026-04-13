@@ -13,6 +13,11 @@
   <!-- Import build-app.xml  -->
   <import file="${core.basedir}\.build\build-app.xml"/>
 
+  <!-- Skip InnoSetup since we only build .7z archives -->
+  <target name="load.lib.innosetup" unless="is.lib.loaded">
+    <echo message="Skip InnoSetup (not needed for .7z only builds)"/>
+  </target>
+
   <!-- Targets -->
   <target name="release" depends="release.app" description="Release"/>
 
