@@ -32,7 +32,7 @@ jobs:
           node-version: "20"
 
       - name: Set up Ant
-        uses: cedx/setup-ant@v4.2.0
+        uses: cedx/setup-ant@v6
         with:
           version: "1.10.15"
 
